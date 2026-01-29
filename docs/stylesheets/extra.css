@@ -1,0 +1,227 @@
+/* Custom styles for Smashing Avocado Blog */
+
+/* Root variables for consistent theming */
+:root {
+  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --gradient-accent: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  --hero-height: 400px;
+}
+
+/* Hero Section Styling */
+.hero-section {
+  width: 100%;
+  margin: -24px -24px 2rem -24px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  background: var(--gradient-primary);
+  border-radius: 0;
+}
+
+.hero-image {
+  width: 100%;
+  height: var(--hero-height);
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  border-radius: 0;
+}
+
+/* Adjust hero for mobile */
+@media screen and (max-width: 76.1875em) {
+  .hero-section {
+    margin: -16px -16px 1.5rem -16px;
+  }
+  
+  :root {
+    --hero-height: 300px;
+  }
+}
+
+@media screen and (max-width: 44.9375em) {
+  :root {
+    --hero-height: 250px;
+  }
+}
+
+/* Gradient header accents */
+.md-header {
+  background: var(--gradient-primary);
+}
+
+/* Custom gradient for links */
+.md-typeset a {
+  color: #764ba2;
+  transition: all 0.3s ease;
+}
+
+.md-typeset a:hover {
+  color: #667eea;
+  text-decoration: underline;
+}
+
+/* Enhance code blocks */
+.md-typeset pre > code {
+  border-radius: 8px;
+}
+
+/* Custom button styling */
+.md-button {
+  background: var(--gradient-primary);
+  border: none;
+  border-radius: 24px;
+  padding: 0.625em 2em;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(102, 126, 234, 0.4);
+}
+
+.md-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+/* Improve readability */
+.md-typeset {
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.md-typeset h1 {
+  font-weight: 700;
+  margin-top: 2rem;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  margin-top: 1.5rem;
+  color: #764ba2;
+}
+
+/* Contact page grid */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+/* Card-like sections */
+.md-typeset h3 {
+  padding: 1rem;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  border-radius: 8px;
+  border-left: 4px solid #764ba2;
+  margin-top: 1rem;
+}
+
+/* Improve blockquote styling */
+.md-typeset blockquote {
+  border-left: 4px solid #764ba2;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+}
+
+/* Navigation improvements */
+.md-tabs {
+  background: var(--gradient-primary);
+}
+
+/* Search bar styling */
+.md-search__input {
+  border-radius: 24px;
+}
+
+/* Footer gradient */
+.md-footer {
+  background: var(--gradient-primary);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+a:focus,
+button:focus,
+input:focus {
+  outline: 2px solid #764ba2;
+  outline-offset: 2px;
+}
+
+/* High contrast for better readability */
+.md-typeset code {
+  background-color: rgba(102, 126, 234, 0.1);
+  color: #764ba2;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/* Responsive images */
+.md-typeset img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Print styles */
+@media print {
+  .hero-section {
+    page-break-inside: avoid;
+  }
+}
+
+/* Dark mode adjustments */
+[data-md-color-scheme="slate"] {
+  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1 {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a {
+  color: #a78bfa;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a:hover {
+  color: #c4b5fd;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.md-content {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Accessibility: Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+}
