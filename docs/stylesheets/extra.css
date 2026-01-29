@@ -90,10 +90,18 @@
 .md-typeset h1 {
   font-weight: 700;
   margin-top: 2rem;
+  color: #764ba2;
   background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* Fallback for browsers that don't support background-clip */
+@supports not (background-clip: text) {
+  .md-typeset h1 {
+    color: #764ba2;
+  }
 }
 
 .md-typeset h2 {
@@ -183,10 +191,18 @@ input:focus {
 }
 
 [data-md-color-scheme="slate"] .md-typeset h1 {
+  color: #a78bfa;
   background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* Fallback for browsers that don't support background-clip in dark mode */
+@supports not (background-clip: text) {
+  [data-md-color-scheme="slate"] .md-typeset h1 {
+    color: #a78bfa;
+  }
 }
 
 [data-md-color-scheme="slate"] .md-typeset a {

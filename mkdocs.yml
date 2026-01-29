@@ -77,7 +77,6 @@ nav:
 # Plugins
 plugins:
   - search
-  - tags
 
 # Extra CSS for custom styling
 extra_css:
