@@ -1,0 +1,96 @@
+site_name: Smashing Avocado Blog
+site_description: A modern, responsive blog about tech and life
+site_author: Smashing Avocado Team
+site_url: https://codess-aus.github.io/smashing-avocado/
+
+# Repository
+repo_name: codess-aus/smashing-avocado
+repo_url: https://github.com/codess-aus/smashing-avocado
+
+# Theme configuration
+theme:
+  name: material
+  palette:
+    # Light mode with gradient colors
+    - scheme: default
+      primary: deep purple
+      accent: pink
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    
+    # Dark mode with gradient colors
+    - scheme: slate
+      primary: deep purple
+      accent: pink
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  
+  font:
+    text: Inter
+    code: JetBrains Mono
+  
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+  
+  icon:
+    repo: fontawesome/brands/github
+
+# Extensions
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - def_list
+  - tables
+  - footnotes
+
+# Page tree
+nav:
+  - Home: index.md
+  - Blog:
+      - First Post: first-post.md
+      - Second Post: second-post.md
+  - Contact: contact.md
+
+# Plugins
+plugins:
+  - search
+
+# Extra CSS for custom styling
+extra_css:
+  - stylesheets/extra.css
+
+# Extra JavaScript
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/codess-aus/smashing-avocado
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/
+
+# Copyright
+copyright: Copyright &copy; 2026 Smashing Avocado
