@@ -48,7 +48,7 @@ I built this blog using:
 
 ## Let's Connect
 
-This is just the beginning! I'd love to hear your feedback, suggestions, or just connect. Feel free to reach out through the [contact page](contact.md).
+This is just the beginning, more coming! I'd love to hear your feedback, suggestions, or just connect. Feel free to reach out through the [contact page](contact.md).
 
 ---
 
