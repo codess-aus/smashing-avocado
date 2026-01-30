@@ -4,7 +4,7 @@ description: Get in touch with me
 ---
 
 <div class="hero-section" markdown="1">
-![Hero Image](images/contact-hero.svg){ .hero-image }
+![Hero Image](images/contact2.jpg){ .hero-image }
 </div>
 
 # Get in Touch
@@ -18,7 +18,7 @@ I'd love to hear from you! Whether you have questions, feedback, or just want to
 ### 💼 **Professional**
 
 - **GitHub**: [@codess-aus](https://github.com/codess-aus)
-- **LinkedIn**: Connect with me on [LinkedIn](https://www.linkedin.com/)
+- **LinkedIn**: Connect with me on [LinkedIn](https://www.linkedin.com/in/michellesandford)
 
 ### 🐦 **Social**
 
